@@ -6,22 +6,8 @@ namespace GameTop
     {
         static void Main(string[] args)
         {
-            var jogo = new JogoFoda("Ronaldo");
+            var jogo = new JogoFoda(new Jogador("Ronaldo"));
             jogo.IniciarJogo();
-        }
-    }
-
-    class JogoFoda
-    {
-        private readonly string _NomeJogador;
-
-        public JogoFoda(string nome)
-        {
-            _NomeJogador = nome;
-        }
-        public void IniciarJogo()
-        {
-            Console.WriteLine($"{_NomeJogador} deu um passe");
         }
     }
 }
